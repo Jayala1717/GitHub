@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Geografia Mundial</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="Ini">Introducción a bases de datos</h1>
+      <nav>
+        <ul>
+          <li><a href="#C1">Concepto y Tipos</a></li>
+          <li><a href="#C2">Estructura de Datos</a></li>
+          <li><a href="#C3">Relaciones</a></li>
+          <li><a href="#C4">Recursos de Interes</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h2 id="C1">Concepto y Tipos de bases de datos</h2>
+        <article>
+          <h3>Bases de datos relacionales (RDBMS)</h3>
+          <p>
+            Las bases de datos relacionales organizan la informacion en tablas
+            compuestas por filas(registros) y columnas (campos). Se basan en el
+            modelo relacional y utilizan el lenguaje SQL para realizar consultas
+            y gestionar los datos de manera estructurada.
+          </p>
+          <br />
+          <p>
+            Ejemplos de sistemas gestores relacionales populares son mySQL,
+            PstgreSQL y Oracle.
+          </p>
+        </article>
+        <article>
+          <h3>Bases de datos No Relacionales (NoSQL)</h3>
+          <p>
+            Las bases de datos NoSQL estan diseñadas para gestionar grandes
+            volumenes de datos no estructurados o semiestructurados. A
+            diferencia de las relacionales, no requieren de esquema rigido y
+            permiten escalabilidad horizontal
+          </p>
+          <br />
+          <p>
+            Existen distintos tipos segun el modelo de almacenamiento:
+            Orientadas a documentos, clave-valor, columnas o grafos. Un ejemplo
+            representativo es MongoDB.
+          </p>
+        </article>
+      </section>
+      <section>
+        <h2 id="C2">Estructura de una base de datos relacional</h2>
+        <h3>Componentes fundamentales</h3>
+        <p>
+          Para definir la estructura de un modelo relacional se emplean los
+          siguientes elementos:
+        </p>
+        <ul>
+          <li>Tablas (Entidades): Estructuras donde se organizan los datos.</li>
+          <li>
+            Campos (Atributos): Columnas que definen la tipología de
+            información.
+          </li>
+          <li>
+            Registros (Tuplas): Filas que contienen cada instancia concreta de
+            datos.
+          </li>
+          <li>
+            Claves primarias (Primary Keys): Identificadores únicos de cada
+            registro
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2 id="C3">Relaciones entre tablas</h2>
+        <h3>Cardinalidades y claves foraneas</h3>
+        <article>
+          <p>
+            Las relaciones determinan como se vinculan las entidades entre si
+            según las reglas de negocio del sistema:
+          </p>
+
+          <ul>
+            <li>Relacion 1:1 (Uno a uno)</li>
+            <li>Relacion 1:N (Uno a muchos)</li>
+            <li>Relacion N:M (Muchos a Muchos)</li>
+          </ul>
+
+          <p>
+            Las Claves foráneas desempeñan la función de vincular dos tablas
+            mediante un identificador que vincula un dato de una tabla con otra
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <aside>
+      <h3 id="C4">Glosario de terminos</h3>
+      <ul>
+        <li>
+          SQL: Un lenguaje de programación estándar diseñado para gestion de
+          bases de datos
+        </li>
+        <li>SGBD: Sistema de gestion de bases de datos</li>
+        <li>
+          Normalización: es un proceso de diseño de bases de datos relacionales
+          que organiza los datos en tablas estructuradas para eliminar la
+          redundancia y mejorar la integridad de los datos.
+        </li>
+      </ul>
+      <p>Enlaces Externos recomendados:</p>
+      <ul>
+        <li><a href="https://dev.mysql.com/doc/">Documentacion oficial MySQL</a></li>
+        <li><a href="https://mariadb.org/">Pagina oficial de MariaDB para bases de datos</a></li>
+        <li><a href="https://mariadb.com/docs/">Documentacion de MariaDB</a></li>
+      </ul>
+    </aside>
+
+    <footer style="text-align: center;">
+        <p>Juan Ayala Párraga</p>
+        <p>&copy; IES San Juan de la Cruz. Todos los derechos reservados</p>
+        <a href="#Ini">Volver al Inicio</a>
+    </footer>
+  </body>
+</html>
