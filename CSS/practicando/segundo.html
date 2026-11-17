@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+
+        .parrafo-azul{
+            color: blue;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: bold;
+        }
+        .parrafo-azul::first-letter{
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: blueviolet;
+        }
+
+        .parrafo-verde{
+            color: rgb(20, 200, 20);
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .parrafo-verde:hover{
+            font-weight: bold;
+            background-image: url(img/rick.gif);
+            height: 250px;
+            width: 300px;
+        }
+        
+        .parrafo-amarillo{
+            color: #FFFF00;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        ul.menu > li{
+            color: red;
+            font-size: 20px;
+        }
+
+        h2 + p{
+            color: green;
+        }
+
+        input:focus{
+            border: 5px red dashed;
+        }
+
+        tr:nth-child(odd){
+            background-color: blue;
+        }
+
+    </style>
+  </head>
+  <body>
+    <ul class="menu">
+      <li>Primera opcion</li>
+      <ol>
+        <li>Primera subopcion</li>
+        <li>segunda subopcion</li>
+      </ol>
+      <li>Segunda opcion</li>
+    </ul>
+
+    <p>mi primer parrafo</p>
+
+    <h2>Titulo</h2>
+
+    <p>mi Segundo parrafo</p>
+
+    <form action="">
+        <label for="nombre"> Nombre</label>
+        <input type="text" name="nombre" placeholder="Introduzca aqui el nombre" id="nombre">
+        <label for="edad">Edad</label>
+        <input type="number" step="5" name="" id="edad">
+        <input type="submit" value="Enviar" name="" id="">
+    </form>
+
+    <p class="parrafo-azul">Esto va de color azul</p>
+    <p class="parrafo-amarillo">Esto va de color amarillo</p>
+    <p class="parrafo-verde">Esto va de color varde</p>
+
+    <table>
+        <tr>
+            <td>algo</td>
+            <td>algo</td>
+            <td>word</td>
+            <td>word</td>
+        </tr>
+        <tr>
+            <td>algo</td>
+            <td>algo</td>
+            <td>word</td>
+            <td>word</td>
+        </tr>
+        <tr>
+            <td>algo</td>
+            <td>algo</td>
+            <td>word</td>
+            <td>word</td>
+        </tr>
+        <tr>
+            <td>algo</td>
+            <td>algo</td>
+            <td>word</td>
+            <td>word</td>
+        </tr>
+        
+    </table>
+    
+  </body>
+</html>
